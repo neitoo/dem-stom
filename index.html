@@ -37,7 +37,7 @@
 			<p>г. Тюмень, ул. Герцена, 53, 1 этаж</p>
 			<p>г. Тобольск, ул. 7а мкр., дом 7а</p>
 		</address>
-		<button class="header__consultation">Бесплатная консультация и план<br>лечения</button>
+		<button class="header__consultation open-modal" id="consultation">Бесплатная консультация и план<br>лечения</button>
 		<a class="header__phone" href="tel:+73452514676">+7 (3452) 51-46-76</a>
 		
     </header>
@@ -82,8 +82,8 @@
 					</div>
 				</dl>
 				<div class="main__buttons">
-					<button class="main__button main__button--consultation">Онлайн консультация дистанционно</button>
-					<button class="main__button main__button--video">Как делается имплантация</button>
+					<button class="main__button main__button--consultation open-modal" id="consultation">Онлайн консультация дистанционно</button>
+					<button class="main__button main__button--video open-modal" id="video" data-video="video1">Как делается имплантация</button>
 				</div>
 			</div>
 			<div class="doctor">
@@ -104,7 +104,7 @@
         <section class="recomendation page__padding">
             <div class="main__info">
                 <h2 class="main__info-title">Если Вы чувствуете, что:</h2>
-                <ul style="list-style-image: url('/res/6.svg');">
+                <ul style="list-style-image: url('res/6.svg');">
                     <li class="main__info-list-item">Съёмные протезы - это не удобно</li>
                     <li class="main__info-list-item">Болят зубы и стало трудно жевать</li>
                     <li class="main__info-list-item">Стесняетесь улыбаться лучезарно и от души</li>
@@ -162,8 +162,8 @@
                 </li>
             </ul>
             <div class="statistic__buttons">
-                <button class="main__button main__button--image">Фотографии клиники</button>
-                <button class="main__button main__button--video">Видео о клинике</button>
+                <button class="main__button main__button--image open-modal" id="image">Фотографии клиники</button>
+                <button class="main__button main__button--video open-modal" id="video" data-video="video2">Видео о клинике</button>
             </div>
         </section>
         <section class="address">
@@ -217,6 +217,13 @@
 			</ul>
 		</section>
     </footer>
+    <div id="modal" class="modal">
+        <div class="modal__content">
+            <div id="modal__body"></div>
+        </div>
+        <span class="modal__close-button">&times;</span>
+    </div>
     <script src="scripts/navfix.js"></script>
+    <script src="scripts/modal.js"></script>
 </body>
 </html>
