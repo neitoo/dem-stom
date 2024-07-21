@@ -591,13 +591,13 @@ html {
     color: black;
     font-size: 1.9vw;
     font-weight: 700;
-    line-height: 53px;
     text-align: center;
 }
 
 .form-desc{
     font-size: 1.3vw;
     font-weight: 300;
+    text-align: center;
 }
 
 form {
@@ -762,6 +762,22 @@ input {
 
     .footer__navigation {
         flex-direction: column;
+    }
+
+    .modal__content {
+        width: 100%;
+    }
+
+    .form-title {
+        font-size: 5vw;
+    }
+    
+    .form-desc, input, .submit__button{
+        font-size: 3.3vw;
+    }
+    
+    label {
+        font-size: 3.5vw;
     }
 }
 
