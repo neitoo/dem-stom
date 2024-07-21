@@ -7,6 +7,10 @@
     font-weight: 600;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .page__padding {
     padding: 0 12vw;
 }
@@ -41,6 +45,14 @@
     display: flex;
     flex-direction: row;
     gap: 60px;
+}
+
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100vw;
 }
 
 .main__nav__mobile{
@@ -378,7 +390,7 @@
 .address {
     background-color: #94c1e3;
     display: flex;
-    width: 100vw;
+    width: 100%;
 }
 
 .address__map{
