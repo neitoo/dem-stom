@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         images.forEach((src, index) => {
             const img = document.createElement('img');
-            img.src = `res/${src}`;
+            img.src = `./res/${src}`;
             img.alt = src;
             if (index === 0) img.classList.add('active');
             gallery.appendChild(img);
