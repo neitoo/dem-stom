@@ -178,7 +178,7 @@ html {
 }
 
 .main__info-list-item {
-    font-size: 1.6vw;
+    font-size: 1.4vw;
     line-height: 5vh;
     font-weight: 500;
     list-style-position: inside;
@@ -385,6 +385,59 @@ html {
 .statistic__buttons {
     display: flex;
     gap:3vw;
+}
+
+.feedback{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.feedback__video-list {
+    width: 100%;
+    list-style-type: none;
+    display: grid;
+    gap: 3vw;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.feedback__video-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4vh;
+}
+
+.feedback__video-author--cite, .feedback__video-author--p {
+    font-style: normal;
+    font-size: 1.4vw;
+    font-weight: 500;
+}
+
+.feedback__video-author--p {
+    text-align: right;
+}
+
+.feedback__video-author--quote{
+    color: #acacac;
+    font-size: 1.1vw;
+    font-weight: 400;
+}
+
+.feedback__video{
+    width: 100%;
+    height: 200px;
+}
+
+.feedback__video-author {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback__buttons{
+    display: flex;
+    justify-content: center;
 }
 
 .address {
@@ -690,7 +743,9 @@ input {
     }
 
     .main__buttons, .statistic__buttons {
+        width: 100vw;
         flex-direction: column;
+        align-items: center;
         gap: 15px;
     }
 
@@ -715,7 +770,7 @@ input {
         font-size: 2vw;
     }
 
-    .recomendation ,.statistic {
+    .recomendation ,.statistic, .feedback {
         height: fit-content;
         padding-top: 10vh;
         padding-bottom: 10vh;
@@ -736,9 +791,11 @@ input {
 
     .statistic__list {
         display: grid;
+        width: 100vw;
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(6, auto);
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         list-style: none;
         gap: 30px;
         margin-bottom: 30px;
@@ -784,6 +841,36 @@ input {
 @media (max-width: 960px) {
     .header__address {
         display: none;
+    }
+
+    .feedback__video-list {
+        list-style-type: none;
+        display: grid;
+        gap: 3vw;
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: none;
+        justify-items: center;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+
+    .feedback__video-item {
+        width: 50%;
+    }
+
+    .feedback__video-author--cite, .feedback__video-author--p {
+        font-size: 2.4vw;
+    }
+    
+    .feedback__video-author--quote{
+        color: #acacac;
+        font-size: 2.1vw;
+        font-weight: 400;
+    }
+    
+    .feedback__video{
+        width: 100%;
+        height: 40vw;
     }
 }
 
